@@ -1,0 +1,10 @@
+@page "/"
+@using Microsoft.AspNetCore.Components.Web
+@using static Microsoft.AspNetCore.Components.Web.RenderMode
+
+<PageTitle>Connect Four</PageTitle>
+
+<h1>Connect Four</h1>
+
+@* 네임스페이스를 풀네임으로 작성하여 에러를 방지합니다 *@
+<Board @rendermode="Microsoft.AspNetCore.Components.Web.RenderMode.InteractiveServer" />
